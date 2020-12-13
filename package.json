@@ -1,0 +1,23 @@
+{
+  "name": "employee-summary",
+  "version": "1.0.0",
+  "description": "This application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members,engineers and interns. \r When the user has completed building the team, the application will create an HTML file that displays a formatted team roster based on the information provided by the user.",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kar3n33/Employee-Summary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kar3n33/Employee-Summary/issues"
+  },
+  "homepage": "https://github.com/Kar3n33/Employee-Summary#readme"
+}
