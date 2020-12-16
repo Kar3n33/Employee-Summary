@@ -31,7 +31,7 @@ const promptUser = () =>
     {
       type: 'input',
       name: 'id',
-      message: `Enter the employee's employee id number`
+      message: `Enter the employee's ID number`
     },
     {
       type: 'input',
@@ -40,19 +40,19 @@ const promptUser = () =>
     },
     {
       type: 'input',
-      name: "officeNumber",
+      name: 'officeNumber',
       message: "Enter the manager's office number",
       when: (answer) => answer.role === "Manager"
     },
 {
   type: 'input',
-  name: "gitHub",
+  name: 'gitHub',
   message: "Enter the engineer's GitHub username",
   when: (answer) => answer.role === "Engineer"
 },
 {
   type: 'input',
-  name: "school",
+  name: 'school',
   message: "Enter the name of the intern's University",
   when: (answer) => answer.role === "Intern"
 },
@@ -80,7 +80,7 @@ const promptUser = () =>
             console.log('Employee added successfully');
             break;
         }
-    if (answers.additionalEmployee) {
+    if (answers.addEmployee) {
       promptUser();
 } else {
     const renderHTML = render(allEmployees);
@@ -88,7 +88,7 @@ const promptUser = () =>
     if (err) {
     console.log(err);
     }else{
-console.log(`success! Your new html page is ready to view.\ncheck inside the 'output' folder`);
+console.log(`Success! Your new html page is ready to view.\ncheck inside the 'output' folder`);
 }
  })
   }
